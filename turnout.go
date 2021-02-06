@@ -29,7 +29,7 @@ var specialAddr = flag.String("p", "", "Special SOCKS5 server(s) for route 3. Th
 
 //var ifname2 = flag.String("if", "", "Network interface for secondary route (e.g. eth1, wlan1)")
 //var dns2Addr = flag.String("dns", "8.8.8.8:53", "DNS nameserver for the secondary interface (no need for SOCKS) (e.g. 8.8.8.8)")
-var tproxy = flag.Bool("t", false, "Use TPROXY in addition to REDIRECT mode for transparent proxy (Linux only)")
+var tproxy = flag.Bool("t", true, "Use TPROXY in addition to REDIRECT mode for transparent proxy (Linux only)")
 var hostFile = flag.String("host", "", "File containing custom rules based on hostnames")
 var ipFile = flag.String("ip", "", "File containing custom rules based on IP/CIDRs")
 var r1Priority = flag.Float64("T0", 1, "Time (seconds) during which route 1 is prioritized (TLS only)")
