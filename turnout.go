@@ -20,7 +20,7 @@ import (
 	"time"
 )
 
-var tranAddr = flag.String("b", "", "Listening address and port for transparent proxy (Linux only) (e.g. 0.0.0.0:2222, [::]:2222)")
+var tranAddr = flag.String("b", "localhost:60080", "Listening address and port for transparent proxy (Linux only) (e.g. 0.0.0.0:2222, [::]:2222)")
 var httpAddr = flag.String("h", "", "Listening address and port for HTTP proxy (e.g. 0.0.0.0:8080, [::]:8080)")
 var socksAddr = flag.String("s", "", "Priority 1 SOCKS5 server(s) for route 2. Multiple servers will be attempted simultaneously to find the fastest route. Use s2 and s3 if you need fail-over only. (e.g. 127.0.0.1:1080,127.0.0.1:1081)")
 var socksAddr2 = flag.String("s2", "", "Priority 2 SOCKS5 server(s) for route 2. These servers will only be used if priority 1 servers have failed.")
